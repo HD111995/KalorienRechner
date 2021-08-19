@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalorien Rechner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+ <h1>Kalorien Rechner</h1>
+ <form action="" onsubmit="return false">
+    <label for="">Körbergröße</label>
+    <input type="number" name="" id="gross" placeholder="In cm" required>
+    <label for="">Alter</label>
+    <input type="number" name="" id="alt" required>
+    <label for="">Gewicht</label>
+    <input type="number" name="" id="gew" placeholder="In KG" required>
+    <label for="">Körperbau</label>
+    <div>
+        <input type="radio" name="gender" id="fr" checked>
+        <label for="fr">Weiblich</label>
+    </div>
+    <div>
+        <input type="radio" name="gender" id="mn">
+        <label for="mn">Männlich</label>
+    </div>
+    <label for="">Arbeit und Freizeitaktivität</label>
+    <select name="" id="akti" >
+        <option value="one">Schlafen</option>
+        <option value="tow">Nur Sitzend oder Liegend</option>
+        <option value="three">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit, z.B. Büroarbeit</option>
+        <option value="four">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+        <option value="five">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker, Mechaniker, Hausfrauen</option>
+        <option value="six">Körperlich anstrengende berufliche Arbeit</option>
+    </select>
+    <input type="submit" value="Submit" onclick="calc()">
+</form>
+<table >
+    <tr>
+        <td colspan="2"></td>
+        <td>Kcal</td>
+        <td>KJ</td>
+    </tr>
+    <tr>
+        <td colspan="2">Grundumsatz</td>
+        <td id="gkc">00</td>
+        <td id="gkj">00</td>
+    </tr>
+    <tr>
+        <td colspan="2">Gesamtumsatz</td>
+        <td id="geskc">00</td>
+        <td id="geskj">00</td>
+    </tr>
+</table>
+    <p>Das Ergebnis des Rechners
+        sollten Sie als Orientierungswer
+        ansehen, da es verschiedene
+        Fehlermöglichkeiten gibt wie
+        abweichender Grundumsatz,
+        falsche Zeiteinschätzung etc.</p>
+</main>
+ <script src="assets/js/main.js"></script>   
+</body>
+</html>

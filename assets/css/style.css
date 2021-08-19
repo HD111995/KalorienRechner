@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/* Normalize */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Global */
+h1,
+label {
+  color: rgb(32, 56, 65);
+}
+label {
+  font-size: 20px;
+  margin-top: 15px;
+}
+body {
+  font-family: "Bebas Neue", cursive;
+  background-image: linear-gradient(150deg, #000, #fff);
+}
+/* main Styling */
+main {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(162, 179, 190),
+    rgb(40, 165, 248)
+  );
+  width: 300px;
+  margin: 5vh auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 10px pink;
+}
+/* heading Styling */
+h1 {
+  padding: 3vh 0;
+  font-size: 40px;
+  word-spacing: 10px;
+}
+/* form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+select {
+  width: 14vw;
+}
+input[type="submit"] {
+  align-self: flex-end;
+  font-size: 18px;
+  padding: 7px 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-image: linear-gradient(35deg, pink, blue);
+}
+/* table Stylings */
+table {
+  margin: 10px 0;
+  font-size: 18px;
+  width: 18vw;
+  background-color: #fff;
+}
+table tr:first-child {
+  background-color: rgb(0, 106, 155);
+  color: #fff;
+}
+td {
+  text-align: left;
+  border: 1px solid rgba(63, 61, 61, 0.664);
+}
+/* paragraph */
+p {
+  color: rgb(129, 112, 33);
+}
+/* THE END */
